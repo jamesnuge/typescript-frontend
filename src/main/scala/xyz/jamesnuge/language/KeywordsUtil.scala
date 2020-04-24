@@ -1,10 +1,7 @@
-package xyz.jamesnuge
+package xyz.jamesnuge.language
 
-import scala.util.matching.Regex
-
-object Identifier {
-
-  private val keywords: List[String] = List(
+object KeywordsUtil {
+  def keywords: List[String] = List(
     "abstract",
     "boolean",
     "break",
@@ -64,12 +61,4 @@ object Identifier {
     "with",
     "yield"
   )
-
-  private def identifierRegex: Regex = "^(\\w\\d)(\\w\\d)*".r
-
-  def isValidIdentifier(identifier: String): Boolean = keywords.indexOf(identifier) match {
-    case -1 => true
-    case _ => false
-  }
-
 }

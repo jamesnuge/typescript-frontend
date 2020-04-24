@@ -1,5 +1,6 @@
-ThisBuild/organization := "comp.mq.edu.au"
-ThisBuild/scalaVersion := "2.12.8"
+scalaVersion := "2.12.10"
+ThisBuild/organization := "xyz.jamesnuge"
+ThisBuild/scalaVersion := "2.12.10"
 ThisBuild/scalacOptions :=
   Seq(
     "-deprecation",
@@ -10,12 +11,12 @@ ThisBuild/scalacOptions :=
     "-Xlint:-stars-align,_"
   )
 
-lazy val weBCPL = (project in file("."))
+lazy val shittyTypescript = (project in file("."))
   .settings(
     // Project information
-    name := "shittytypescript"
-    version := "0.1"
-    scalaVersion := "2.13.1"
+    name := "shittytypescript",
+    version := "0.1",
+    scalaVersion := "2.13.1",
 
     // Execution
     parallelExecution in Test := false,
