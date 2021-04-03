@@ -6,7 +6,7 @@ import xyz.jamesnuge.language.{IdentifierUtil, KeywordsUtil}
 
 class SyntaxAnalysis(positions: Positions) extends Parsers(positions) {
 
-  lazy val keywordParser = keywords(
+  lazy val keywordParser: PackratParser[String] = keywords(
     IdentifierUtil.identifierRegex,
     KeywordsUtil.keywords
   ) | failure("expecting keyword")

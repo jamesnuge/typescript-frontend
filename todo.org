@@ -1,0 +1,3 @@
+* AST
+** Create parsers for terminals based on this link https://github.com/rbuckton/grammarkdown/blob/master/spec/typescript.grammar
+** Create non-terminal parses for the rest of them (maybe start with Types first)
